@@ -1,0 +1,21 @@
+.form {
+  border: none;
+  width: 240px;
+  height: 16px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.submit {
+  margin-top: 18px;
+  border: solid white;
+  border-width: 1px;
+  background-color: #016F88;
+  width: 260px;
+  height: 36px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
