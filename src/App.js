@@ -1,5 +1,6 @@
 import React from 'react';
 import AuthPage from './components/AuthPage';
+import { getCookie } from './utils/cookie.js';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -9,15 +10,22 @@ export default class App extends React.Component {
   }
 
   handleLogin() {
-    // Send to backend
     this.setState({ isLoggedIn: true });
-    console.log("LoggedIn: ", this.state.isLoggedIn)
+    console.log("LoggedIn: ", this.state.isLoggedIn);
   }
 
   render() {
-    // const isLoggedIn = this.state.isLoggedIn;
-    let pages = <AuthPage handleLogin={ this.handleLogin } />
-    console.log(pages)
+    if (getCookie("auth")) {
+      console.log("AUTH: ", getCookie("auth"));
+      this.state.isLoggedIn = true;
+    }
+    const isLoggedIn = this.state.isLoggedIn;
+    let pages;
+    if (isLoggedIn) {
+      pages = "LOGGED IN."
+    } else {
+      pages = <AuthPage handleLogin={ this.handleLogin } />
+    }
     return (
       <div>
         { pages }

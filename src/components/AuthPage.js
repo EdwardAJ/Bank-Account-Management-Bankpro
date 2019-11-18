@@ -5,6 +5,7 @@ import axios from 'axios';
 import { LOGIN_URL } from './../utils/endpoints.js';
 import { HEADERS } from './../utils/header.js';
 import getXMLResponse from './../utils/functions.js';
+import { createCookie } from './../utils/cookie.js';
 
 export default class AuthPage extends React.Component {
     constructor (props) {
@@ -37,6 +38,7 @@ export default class AuthPage extends React.Component {
             if (response.status === 200) {
                 let resultStr = getXMLResponse(response.data)[0].innerHTML;
                 if (resultStr === 'true') {
+                    createCookie("auth", this.state.value, 1);
                     this.props.handleLogin();
                 } else {
                     alert("Silakan masukkan nomor yang valid.");
