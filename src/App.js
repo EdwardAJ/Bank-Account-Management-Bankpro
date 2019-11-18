@@ -1,5 +1,6 @@
 import React from 'react';
 import AuthPage from './components/AuthPage';
+import MainPage from './components/MainPage';
 import { getCookie } from './utils/cookie.js';
 
 export default class App extends React.Component {
@@ -16,19 +17,19 @@ export default class App extends React.Component {
 
   render() {
     if (getCookie("auth")) {
-      console.log("AUTH: ", getCookie("auth"));
+      // console.log("AUTH: ", getCookie("auth"));
       this.state.isLoggedIn = true;
     }
     const isLoggedIn = this.state.isLoggedIn;
-    let pages;
+    let page;
     if (isLoggedIn) {
-      pages = "LOGGED IN."
+      page = <MainPage />
     } else {
-      pages = <AuthPage handleLogin={ this.handleLogin } />
+      page = <AuthPage handleLogin={ this.handleLogin } />
     }
     return (
       <div>
-        { pages }
+        { page }
       </div>
     );
   }
