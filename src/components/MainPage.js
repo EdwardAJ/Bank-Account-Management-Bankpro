@@ -1,6 +1,7 @@
 import React from 'react';
 import './MainPage.css';
-import InfoComponent from './InfoComponent'
+import InfoComponent from './InfoComponent';
+import TransferComponent from './TransferComponent';
 
 export default class MainPage extends React.Component {
     constructor (props) {
@@ -21,9 +22,8 @@ export default class MainPage extends React.Component {
         if (choiceNum === 1) {
             component = <InfoComponent />
         } else if (choiceNum === 2) {
-
+            component = <TransferComponent />
         } else if (choiceNum === 3) {
-
         }
         return (
             <div className="container">
