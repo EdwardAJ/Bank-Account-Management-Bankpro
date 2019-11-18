@@ -1,8 +1,8 @@
 .container-margin {
-    margin-bottom: 10.75%;
+    margin-bottom: 10.5%;
 }
   
-#login-header {
+.login-header {
   font-size: 0.85rem;
   color: white;
   font-weight: 600;
@@ -12,7 +12,7 @@
 }
 
 .submit {
-  margin-top: 17.5px;
+margin-top: 17.5px;
   letter-spacing: 0.05rem;
   border: solid white;
   border-width: 1px;
