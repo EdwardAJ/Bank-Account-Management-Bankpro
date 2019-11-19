@@ -2,6 +2,7 @@ import React from 'react';
 import './MainPage.css';
 import InfoComponent from './InfoComponent';
 import TransferComponent from './TransferComponent';
+import HistoryComponent from './HistoryComponent';
 
 export default class MainPage extends React.Component {
     constructor (props) {
@@ -24,6 +25,7 @@ export default class MainPage extends React.Component {
         } else if (choiceNum === 2) {
             component = <TransferComponent />
         } else if (choiceNum === 3) {
+            component = <HistoryComponent />
         }
         return (
             <div className="container">
@@ -39,40 +41,7 @@ export default class MainPage extends React.Component {
                         </div>
                     </div>
                     <div className="section-right">
-                        <div class="wrapper">
-                            <div className="card">
-                                <div className="card-content">
-                                    <p className="type"> Debit </p>
-                                    <p className="amount"> 20000 </p>
-                                    <p className="account-number"> 13517115 </p>
-                                    <p className="time-date"> 2019-11-18 17:15:05 </p>
-                                </div>
-                            </div>
-                            <div className="card">
-                                <div className="card-content">
-                                    <p className="type"> Debit </p>
-                                    <p className="amount"> 20000 </p>
-                                    <p className="account-number"> 13517115 </p>
-                                    <p className="time-date"> 2019-11-18 17:15:05 </p>
-                                </div>
-                            </div>
-                            <div className="card">
-                                <div className="card-content">
-                                    <p className="type"> Debit </p>
-                                    <p className="amount"> 20000 </p>
-                                    <p className="account-number"> 13517115 </p>
-                                    <p className="time-date"> 2019-11-18 17:15:05 </p>
-                                </div>
-                            </div>
-                            <div className="card">
-                                <div className="card-content">
-                                    <p className="type"> Debit </p>
-                                    <p className="amount"> 20000 </p>
-                                    <p className="account-number"> 13517115 </p>
-                                    <p className="time-date"> 2019-11-18 17:15:05 </p>
-                                </div>
-                            </div>
-                        </div>
+                        { component }
                     </div>
                 </div>
             </div>
