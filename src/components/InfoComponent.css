@@ -1,0 +1,14 @@
+.info {
+    color: white;
+    line-height: 0.5rem;
+    margin-top: 73.5px;
+}
+
+.info p { 
+    font-size: 0.85rem;
+}
+
+.info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}

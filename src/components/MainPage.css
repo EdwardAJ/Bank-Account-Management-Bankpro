@@ -1,0 +1,44 @@
+.container {
+    display: block;
+    height: 100vh;
+}
+
+.section-bottom {
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+.section-left { 
+    width: 45%;
+}
+
+.section-top {
+    height: 150px;
+}
+
+.menu {
+    line-height: 1.75rem;
+    margin-left: 80%;
+    color: white;
+    /* margin-bottom: 44.25%; */
+    min-width: 500px;
+}
+
+.menu p {
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.active {
+    font-weight: 700;
+}
+
+.menu h2 {
+    font-size: 1.25rem;
+}
+
+.section-right {
+    width: 55%;
+    margin-left: 5%;
+    max-width: 1000px;
+}
