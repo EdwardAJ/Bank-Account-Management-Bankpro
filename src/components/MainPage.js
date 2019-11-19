@@ -27,16 +27,53 @@ export default class MainPage extends React.Component {
         }
         return (
             <div className="container">
-                <div className="section-left">
-                    <div className="menu">
-                        <h2> bankpro </h2> 
-                        <p className={ this.state.choice===1 ? 'active': 'default'} onClick={ () => this.handleClick(1) }> Home </p>
-                        <p className={ this.state.choice===2 ? 'active': 'default'} onClick={ () => this.handleClick(2) }> Transfer </p>
-                        <p className={ this.state.choice===3 ? 'active': 'default'} onClick={ () => this.handleClick(3) }> History </p>
-                    </div>
+                <div className="section-top">
                 </div>
-                <div className="section-right">
-                    { component }
+                <div className="section-bottom">
+                    <div className="section-left">
+                        <div className="menu">
+                            <h2> bankpro </h2> 
+                            <p className={ this.state.choice===1 ? 'active': 'default'} onClick={ () => this.handleClick(1) }> Home </p>
+                            <p className={ this.state.choice===2 ? 'active': 'default'} onClick={ () => this.handleClick(2) }> Transfer </p>
+                            <p className={ this.state.choice===3 ? 'active': 'default'} onClick={ () => this.handleClick(3) }> History </p>
+                        </div>
+                    </div>
+                    <div className="section-right">
+                        <div class="wrapper">
+                            <div className="card">
+                                <div className="card-content">
+                                    <p className="type"> Debit </p>
+                                    <p className="amount"> 20000 </p>
+                                    <p className="account-number"> 13517115 </p>
+                                    <p className="time-date"> 2019-11-18 17:15:05 </p>
+                                </div>
+                            </div>
+                            <div className="card">
+                                <div className="card-content">
+                                    <p className="type"> Debit </p>
+                                    <p className="amount"> 20000 </p>
+                                    <p className="account-number"> 13517115 </p>
+                                    <p className="time-date"> 2019-11-18 17:15:05 </p>
+                                </div>
+                            </div>
+                            <div className="card">
+                                <div className="card-content">
+                                    <p className="type"> Debit </p>
+                                    <p className="amount"> 20000 </p>
+                                    <p className="account-number"> 13517115 </p>
+                                    <p className="time-date"> 2019-11-18 17:15:05 </p>
+                                </div>
+                            </div>
+                            <div className="card">
+                                <div className="card-content">
+                                    <p className="type"> Debit </p>
+                                    <p className="amount"> 20000 </p>
+                                    <p className="account-number"> 13517115 </p>
+                                    <p className="time-date"> 2019-11-18 17:15:05 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         );
