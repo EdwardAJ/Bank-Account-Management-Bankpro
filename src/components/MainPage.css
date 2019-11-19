@@ -1,22 +1,27 @@
 .container {
+    display: block;
     height: 100vh;
-    /* width: 100vw; */
+}
+
+.section-bottom {
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
     font-family: 'Open Sans', sans-serif;
   }
 
 .section-left { 
     width: 45%;
-    /* background-color: white; */
+}
+
+.section-top {
+    height: 150px;
 }
 
 .menu {
     line-height: 1.75rem;
     margin-left: 80%;
     color: white;
-    margin-bottom: 44.25%;
+    /* margin-bottom: 44.25%; */
+    min-width: 500px;
 }
 
 .menu p {
@@ -35,4 +40,5 @@
 .section-right {
     width: 55%;
     margin-left: 5%;
+    max-width: 1000px;
 }
