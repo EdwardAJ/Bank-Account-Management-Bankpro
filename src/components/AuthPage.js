@@ -52,7 +52,7 @@ export default class AuthPage extends React.Component {
     
     render() {
         return (
-            <div className="container">
+            <div className="container-auth">
                 <div>
                     <p id="login-header"> Masukkan Nomor Rekening </p>
                     <div className="form-area">

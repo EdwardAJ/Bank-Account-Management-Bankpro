@@ -11,8 +11,8 @@ export default class SingleHistoryComponent extends React.Component {
             <div className="card">
                 <div className="card-content">
                     <p className="type"> { this.props.type } </p>
-                    <p className="amount"> { this.props.amount } </p>
-                    <p className="account-number"> { this.props.accountNumber } </p>
+                    <p className="amount"> Rp{ this.props.amount } </p>
+                    <p className="account-number"> No Rek: { this.props.accountNumber } </p>
                     <p className="time-date"> { this.props.timeDate } </p>
                 </div>
             </div>
