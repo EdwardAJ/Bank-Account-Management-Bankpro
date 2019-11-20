@@ -53,7 +53,7 @@ export default class TransferComponent extends React.Component {
                 alert(resultStr);
             }
         }).catch((error) => {
-            alert("Error: ", error);
+            console.log("Error: ", error);
         });
 
         event.preventDefault();

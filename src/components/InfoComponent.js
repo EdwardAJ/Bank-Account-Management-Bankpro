@@ -41,7 +41,7 @@ export default class InfoComponent extends React.Component {
                 this.setState({ nama: nama, noRek: noRek, bank: bank, saldo: saldo });
             }
         }).catch((error) => {
-            alert("Error: ", error);
+            console.log("Error: ", error);
         });
     }
 

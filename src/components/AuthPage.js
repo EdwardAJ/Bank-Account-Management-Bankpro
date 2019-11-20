@@ -46,7 +46,7 @@ export default class AuthPage extends React.Component {
                 }
             }
         }).catch((error) => {
-            alert("Error: ", error);
+            console.log("Error: ", error);
         });
         if (event) {
             event.preventDefault();

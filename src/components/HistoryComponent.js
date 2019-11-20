@@ -65,7 +65,7 @@ export default class HistoryComponent extends React.Component {
                 this.setState({childComponents: childComponentsList});
             }
         }).catch((error) => {
-            alert("Error: ", error);
+            console.log("Error: ", error);
         });
     }
 
