@@ -7,9 +7,6 @@ lint-test:
   tags:
     - tubes2wbd
   script:
-    - 'whoami'
-    - 'ls'
-    - 'cd /home/ubuntu/bank-pro'
     - 'npm install'
     - 'eslint src'
     - 'npm run test'
