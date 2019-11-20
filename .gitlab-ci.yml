@@ -9,7 +9,7 @@ lint-test:
   script:
     - 'whoami'
     - 'ls'
-    - 'cd bank-pro'
+    - 'cd /home/ubuntu/bank-pro'
     - 'npm install'
     - 'eslint src'
     - 'npm run test'
