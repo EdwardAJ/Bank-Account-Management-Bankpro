@@ -1,0 +1,72 @@
+exports[`AuthPage should render my component 1`] = `
+Array [
+  <div
+    className="container-auth">
+    <div>
+        <p
+            id="login-header">
+             Masukkan Nomor Rekening 
+        </p>
+        <div
+            className="form-area">
+            <form>
+                <input
+                    className="form"
+                    onChange={[Function]}
+                    placeholder="Example: 13517070"
+                    type="text"
+                    value="" />
+            </form>
+        </div>
+        <form>
+            <button
+                className="submit"
+                onClick={[Function]}>
+                LOGIN
+            </button>
+        </form>
+    </div>
+</div>,
+]
+`;
+
+exports[`MainPage should render my component 1`] = `
+Array [
+  <div
+    className="container">
+    <div
+        className="section-top" />
+    <div
+        className="section-bottom">
+        <div
+            className="section-left">
+            <div
+                className="menu">
+                <h2>
+                     bankpro 
+                </h2>
+                <p
+                    className="active"
+                    onClick={[Function]}>
+                     Home 
+                </p>
+                <p
+                    className="default"
+                    onClick={[Function]}>
+                     Transfer 
+                </p>
+                <p
+                    className="default"
+                    onClick={[Function]}>
+                     History 
+                </p>
+            </div>
+        </div>
+        <div
+            className="section-right">
+            <InfoComponent />
+        </div>
+    </div>
+</div>,
+]
+`;

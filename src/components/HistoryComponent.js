@@ -1,5 +1,5 @@
 import React from 'react';
-import SingleHistoryComponent from './SingleHistoryComponent'
+import SingleHistoryComponent from './SingleHistoryComponent';
 import './HistoryComponent.css';
 
 import axios from 'axios';
@@ -14,7 +14,7 @@ export default class HistoryComponent extends React.Component {
         // State of child components:
         this.state = {
             childComponents: []
-        }
+        };
         // Request and get response from backend.
         this.fetchHistory();
     }
@@ -51,15 +51,15 @@ export default class HistoryComponent extends React.Component {
                         type = getXMLResponse(response.data)[i].innerHTML;
                     } else if ( (i + 1) % 4 === 0) {
                         timeDate = getXMLResponse(response.data)[i].innerHTML;
-                        childComponentsList.push( <SingleHistoryComponent key={keyIdx} accountNumber={accountNumber} type={type} amount={amount} timeDate={timeDate}  />)
+                        childComponentsList.push( <SingleHistoryComponent key={keyIdx} accountNumber={accountNumber} type={type} amount={amount} timeDate={timeDate}  />);
                         keyIdx++;
                     }
                 }
                 this.setState({childComponents: childComponentsList});
             }
         }).catch((error) => {
-            console.log("Error: ", error);
-        })
+            alert("Error: ", error);
+        });
     }
 
     render() {

@@ -1,5 +1,5 @@
 import React from 'react';
-import './TransferComponent.css'
+import './TransferComponent.css';
 
 import axios from 'axios';
 import { TRANSFER_URL } from './../utils/endpoints.js';
@@ -53,8 +53,8 @@ export default class TransferComponent extends React.Component {
                 alert(resultStr);
             }
         }).catch((error) => {
-            console.log("Error: ", error);
-        })
+            alert("Error: ", error);
+        });
 
         event.preventDefault();
     }

@@ -1,0 +1,12 @@
+stages:
+  - build
+  - deploy
+
+javalint:
+  stage: build
+  tags:
+    - wsbank
+  script:
+    - 'npm install'
+    - 'eslint src'
+    - 'npm run test'
