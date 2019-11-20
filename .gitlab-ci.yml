@@ -2,11 +2,12 @@ stages:
   - build
   - deploy
 
-javalint:
+lint-test:
   stage: build
   tags:
     - tubes2wbd
   script:
+    - 'cd bank-pro'
     - 'npm install'
     - 'eslint src'
     - 'npm run test'
