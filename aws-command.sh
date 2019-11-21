@@ -6,11 +6,10 @@ echo 'DIR?'
 ls /home/ubuntu/bank-pro
 cd /home/ubuntu/bank-pro
 git stash
-git checkout master
-git pull origin master
+git checkout feature-Test
+git pull origin feature-Test
 echo 'Deleting screen...'
 screen -X -S bank-pro quit
-sudo rm -rf node_modules
 sudo npm install
 echo 'Create executable...'
 sudo npm run build
