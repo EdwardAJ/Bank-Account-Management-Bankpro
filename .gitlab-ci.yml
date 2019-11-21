@@ -8,6 +8,8 @@ lint-and-test:
     - tubes2wbd
   script:
     - 'sudo npm install'
+    - 'sudo chown ubuntu node_modules'
+    - 'sudo chgrp ubuntu node_modules'
     - 'eslint src'
     - 'sudo npm run test'
 
