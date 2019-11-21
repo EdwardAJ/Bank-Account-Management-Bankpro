@@ -7,11 +7,9 @@ lint-and-test:
   tags:
     - tubes2wbd
   script:
-    - 'pwd'
-    # - 'sudo rm -rf node_modules'
-    # - 'sudo npm install'
-    # - 'eslint src'
-    # - 'sudo npm run test'
+    - 'sudo npm install'
+    - 'eslint src'
+    - 'sudo npm run test'
 
 bankpro-deploy:
   stage: deploy
