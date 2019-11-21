@@ -11,8 +11,6 @@ git pull origin feature-Test
 echo 'Deleting screen...'
 screen -X -S bank-pro quit
 sudo npm install
-sudo chown ubuntu node_modules
-sudo chgrp ubuntu node_modules
 echo 'Create executable...'
 sudo npm run build
 sudo npm install -g serve
