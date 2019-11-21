@@ -8,24 +8,26 @@ export default class App extends React.Component {
     super(props);
     this.handleLogin = this.handleLogin.bind(this);
     this.state = {isLoggedIn: false};
+
   }
 
   handleLogin() {
     this.setState({ isLoggedIn: true });
-    console.log("LoggedIn: ", this.state.isLoggedIn);
+  }
+
+  componentDidMount () {
+    if (getCookie("auth")) {
+      this.handleLogin();
+    }
   }
 
   render() {
-    if (getCookie("auth")) {
-      // console.log("AUTH: ", getCookie("auth"));
-      this.state.isLoggedIn = true;
-    }
     const isLoggedIn = this.state.isLoggedIn;
     let page;
     if (isLoggedIn) {
-      page = <MainPage />
+      page = <MainPage />;
     } else {
-      page = <AuthPage handleLogin={ this.handleLogin } />
+      page = <AuthPage handleLogin={ this.handleLogin } />;
     }
     return (
       <div>

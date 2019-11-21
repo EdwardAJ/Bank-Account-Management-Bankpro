@@ -1,0 +1,31 @@
+exports[`AuthPage should render my component 1`] = `
+Array [
+  <div
+    className="container-auth">
+    <div>
+        <p
+            id="login-header">
+             Masukkan Nomor Rekening 
+        </p>
+        <div
+            className="form-area">
+            <form>
+                <input
+                    className="form"
+                    onChange={[Function]}
+                    placeholder="Example: 13517070"
+                    type="text"
+                    value="" />
+            </form>
+        </div>
+        <form>
+            <button
+                className="submit"
+                onClick={[Function]}>
+                LOGIN
+            </button>
+        </form>
+    </div>
+</div>,
+]
+`;

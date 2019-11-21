@@ -1,5 +1,5 @@
 import React from 'react';
-import './InfoComponent.css'
+import './InfoComponent.css';
 
 import axios from 'axios';
 import { INFO_URL } from './../utils/endpoints.js';
@@ -42,7 +42,7 @@ export default class InfoComponent extends React.Component {
             }
         }).catch((error) => {
             console.log("Error: ", error);
-        })
+        });
     }
 
     render() {

@@ -1,0 +1,44 @@
+exports[`TransferComponent should match this component 1`] = `
+Array [
+  <div
+    className="container-margin">
+    <p
+        className="login-header">
+         Nomor Rekening Transfer 
+    </p>
+    <div
+        className="form-area">
+        <form>
+            <input
+                className="form"
+                onChange={[Function]}
+                placeholder="Example: 13517070"
+                type="text"
+                value="" />
+        </form>
+    </div>
+    <p
+        className="login-header">
+         Jumlah Transfer 
+    </p>
+    <div
+        className="form-area">
+        <form>
+            <input
+                className="form"
+                onChange={[Function]}
+                placeholder="Example: 40000"
+                type="text"
+                value="" />
+        </form>
+    </div>
+    <form>
+        <button
+            className="submit"
+            onClick={[Function]}>
+             TRANSFER 
+        </button>
+    </form>
+</div>,
+]
+`;

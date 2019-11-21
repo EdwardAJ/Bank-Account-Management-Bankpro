@@ -21,11 +21,11 @@ export default class MainPage extends React.Component {
         let choiceNum = this.state.choice;
         let component;
         if (choiceNum === 1) {
-            component = <InfoComponent />
+            component = <InfoComponent />;
         } else if (choiceNum === 2) {
-            component = <TransferComponent />
+            component = <TransferComponent />;
         } else if (choiceNum === 3) {
-            component = <HistoryComponent />
+            component = <HistoryComponent />;
         }
         return (
             <div className="container">
@@ -35,9 +35,9 @@ export default class MainPage extends React.Component {
                     <div className="section-left">
                         <div className="menu">
                             <h2> bankpro </h2> 
-                            <p className={ this.state.choice===1 ? 'active': 'default'} onClick={ () => this.handleClick(1) }> Home </p>
-                            <p className={ this.state.choice===2 ? 'active': 'default'} onClick={ () => this.handleClick(2) }> Transfer </p>
-                            <p className={ this.state.choice===3 ? 'active': 'default'} onClick={ () => this.handleClick(3) }> History </p>
+                            <p id="id-1" className={ this.state.choice===1 ? 'active': 'default'} onClick={ () => this.handleClick(1) }> Home </p>
+                            <p id="id-2" className={ this.state.choice===2 ? 'active': 'default'} onClick={ () => this.handleClick(2) }> Transfer </p>
+                            <p id="id-3" className={ this.state.choice===3 ? 'active': 'default'} onClick={ () => this.handleClick(3) }> History </p>
                         </div>
                     </div>
                     <div className="section-right">

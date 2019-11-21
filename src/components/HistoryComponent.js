@@ -1,5 +1,5 @@
 import React from 'react';
-import SingleHistoryComponent from './SingleHistoryComponent'
+import SingleHistoryComponent from './SingleHistoryComponent';
 import './HistoryComponent.css';
 
 import axios from 'axios';
@@ -14,7 +14,7 @@ export default class HistoryComponent extends React.Component {
         // State of child components:
         this.state = {
             childComponents: []
-        }
+        };
         // Request and get response from backend.
         this.fetchHistory();
     }
@@ -50,8 +50,15 @@ export default class HistoryComponent extends React.Component {
                     } else if (( i + 1) % 4 === 3) {
                         type = getXMLResponse(response.data)[i].innerHTML;
                     } else if ( (i + 1) % 4 === 0) {
-                        timeDate = getXMLResponse(response.data)[i].innerHTML;
-                        childComponentsList.push( <SingleHistoryComponent key={keyIdx} accountNumber={accountNumber} type={type} amount={amount} timeDate={timeDate}  />)
+                        let timeDateTemp = new Date(getXMLResponse(response.data)[i].innerHTML);
+                        let hour = (timeDateTemp.getHours() + 7) % 24;
+                        let minute = timeDateTemp.getMinutes();
+                        let second = timeDateTemp.getSeconds();
+                        let date = timeDateTemp.getDate();
+                        let month = timeDateTemp.getMonth() + 1;
+                        let year = timeDateTemp.getFullYear();
+                        let finalDate = date + "-" + month + "-" + year + " " + hour + ":" + minute + ":" + second;
+                        childComponentsList.push( <SingleHistoryComponent key={keyIdx} accountNumber={accountNumber} type={type} amount={amount} timeDate={finalDate}  />);
                         keyIdx++;
                     }
                 }
@@ -59,7 +66,7 @@ export default class HistoryComponent extends React.Component {
             }
         }).catch((error) => {
             console.log("Error: ", error);
-        })
+        });
     }
 
     render() {

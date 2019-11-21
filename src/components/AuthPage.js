@@ -1,3 +1,4 @@
+/* eslint react/prop-types: 0 */
 import React from 'react';
 import './AuthPage.css';
 
@@ -46,8 +47,10 @@ export default class AuthPage extends React.Component {
             }
         }).catch((error) => {
             console.log("Error: ", error);
-        })
-        event.preventDefault();
+        });
+        if (event) {
+            event.preventDefault();
+        }
     }
     
     render() {

@@ -1,0 +1,20 @@
+stages:
+  - build
+  - deploy
+
+lint-and-test:
+  stage: build
+  tags:
+    - tubes2wbd
+  script:
+    - 'sudo npm install'
+    - 'eslint src'
+    - 'sudo npm run test'
+    - 'sudo rm -rf node_modules'
+
+bankpro-deploy:
+  stage: deploy
+  tags:
+    - tubes2wbd
+  script:
+    - bash aws-command.sh
