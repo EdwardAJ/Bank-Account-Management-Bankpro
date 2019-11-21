@@ -12,6 +12,7 @@ lint-and-test:
     - 'sudo chgrp ubuntu node_modules'
     - 'eslint src'
     - 'sudo npm run test'
+    - 'whoami'
 
 bankpro-deploy:
   stage: deploy
