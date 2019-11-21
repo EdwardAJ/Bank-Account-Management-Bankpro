@@ -15,4 +15,4 @@ echo 'Create executable...'
 sudo npm run build
 sudo npm install -g serve
 echo 'Entering screen...'
-screen -d -m -S wsbank serve -s build
+screen -d -m -S bank-pro serve -s build
