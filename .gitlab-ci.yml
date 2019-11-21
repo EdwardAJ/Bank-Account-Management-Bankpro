@@ -13,6 +13,8 @@ lint-and-test:
     - 'sudo rm -rf node_modules'
 
 bankpro-deploy:
+  only:
+    - master
   stage: deploy
   tags:
     - tubes2wbd

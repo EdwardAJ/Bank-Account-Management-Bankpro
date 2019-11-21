@@ -6,8 +6,8 @@ echo 'DIR?'
 ls /home/ubuntu/bank-pro
 cd /home/ubuntu/bank-pro
 git stash
-git checkout feature-Test
-git pull origin feature-Test
+git checkout master
+git pull origin master
 echo 'Deleting screen...'
 screen -X -S bank-pro quit
 sudo npm install
