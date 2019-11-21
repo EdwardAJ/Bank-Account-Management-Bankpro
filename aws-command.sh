@@ -5,8 +5,7 @@ ls
 echo 'DIR?'
 ls /home/ubuntu/bank-pro
 cd /home/ubuntu/bank-pro
-git stash
-git checkout master
+sudo rm -rf *
 git pull origin master
 echo 'Deleting screen...'
 screen -X -S bank-pro quit
