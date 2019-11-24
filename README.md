@@ -29,7 +29,10 @@ di-pass kepada SingleHistoryComponent.js. Koleksi dari SingleHistoryComponent.js
 
 [ SCREENSHOT ]
 
-
+![Alt text](screenshot/login.png?raw=true "Login Page")
+![Alt text](screenshot/home.png?raw=true "Info Page")
+![Alt text](screenshot/transfer.png?raw=true "Transfer Page")
+![Alt text](screenshot/history.png?raw=true "History Page")
 
 [IF 3159 Dasar Pembangunan Perangkat Lunak]
 
